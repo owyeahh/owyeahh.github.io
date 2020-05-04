@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" >
-
 <head>
   <meta charset="UTF-8">
   <title>Make You Mine</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Click me!!.">
+  <meta name="description" content="Click me!!">
   <meta name="og:image" content="https://i.ya-webdesign.com/images/click-here-button-png-6.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link id="favicon" rel="shortcut icon" href="https://www.favicon.cc/logo3d/377601.png" type="image/png"> 
@@ -23,17 +22,18 @@
           <a id="min" class="button" href="https://fb.com/juliandra.bb"></a>
           <a id="max" class="button" href="https://fb.com/juliandra.bb"></a>
         </div>
-        <span class="title">Surprise</span></div>
+        <span class="title">For You From Me</span></div>
       <div class="message">
-        <span class='prompt'><span class='user'>Your</span><span class="path">Crush</span>~<span class="caret">#</span> </span>
+        <span class='prompt'><span class='user'>Your</span><span class="path">Crush</span>~</span>
         <span class="typed"></span>
         <form>><span class="caret">#</span>&nbsp;
           <input type="text" name="response"></input>
         </form>
       </div>
       <div class="message">   
-      <a href="https://api.whatsapp.com/send?phone=6285377063330&text=aku+mau+jadi+pacar+kamu❤"><button class="btn">Mauu Bangettt</button>      
-      <a href="https://api.whatsapp.com/send?phone=6285377063330&text=gk+lu+buriqqqq"><button class="btn">Gak</button>         
+      <a href="https://api.whatsapp.com/send?phone=6285377063330&text=aku+mau+jadi+pacar+kamu❤"><button class="btn">Mau</button>      
+      <a href="https://api.whatsapp.com/send?phone=6285377063330&text=gk+lu+buriqqqq"><button class="btn">Gak</button>
+      </div>
     </div>
   </div>
   </section>
@@ -58,8 +58,6 @@
 }
 
 #four-oh-four img.bg {
-  -webkit-filter: grayscale(30%);
-          filter: grayscale(30%);
   position: absolute;
   background-image: url(https://cdn.hipwallpaper.com/i/24/81/h1uTMd.jpg);
   background-color: #333333;
@@ -69,20 +67,13 @@
   height: 100%;
   top: 0;
 }
-#four-oh-four #error-container .overlay {
-  position: absolute;
-  background-color: #000;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  opacity: 0.3;
-}
+
 #four-oh-four .terminal {
   position: relative;
   background: rgba(38, 38, 38, 0.8);
-  width: 50%;
-  height: 30vh;
-  border-radius: 8px;
+  width: 80%;
+  height: 50vh;
+  border-radius: 10px;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
   margin: 20vh auto;
 }
@@ -199,10 +190,39 @@
 </style>
 
 <script type="text/javascript">
+
+     function startTime() {
+
+        var today=new Date();
+
+        var h=today.getHours();
+
+        var m=today.getMinutes();
+
+        var s=today.getSeconds();
+
+        m = checkTime(m);
+
+        s = checkTime(s);
+
+        document.getElementById('jam').innerHTML = h+":"+m+":"+s;
+
+        var t = setTimeout(function(){startTime()},500);
+
+    }
+
+
+    function checkTime(i) {
+
+        if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
+
+        return i;
+
+    }
+
 $(function() {
   $(".typed").typed({
     strings: [
-      "For you From me.<br/>" + 
       "Aku dan kamu hanya masa lalu masing-masing, tapi itu tidak penting karena sekarang aku hanya ingin membicarakan tentang masa depan. Mulai hari ini dan seterusnya, maukah kamu menjadi pacarku?. "
 
     ],
@@ -223,3 +243,5 @@ $(function() {
   $('.message form').hide()
 });
 </script>
+
+</html>
